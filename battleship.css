@@ -1,0 +1,122 @@
+body {
+	margin: 60px auto;
+	width: 70%;
+	max-width: 900px;
+}
+
+h1 {
+	color: #001f3f;
+	font-family: 'Orbitron', sans-serif;
+	font-size: 70px;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 0 2px white, 0 3px #777;
+}
+
+h2 {
+	font-family: 'Exo', sans-serif;
+	font-size: 24px;
+}
+
+h3 {
+	font-family: 'Exo', sans-serif;
+}
+ 
+button {
+  background: #001f3f;
+  border: 0;
+  border-radius: 28px;
+  font-family: Exo;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  position: relative;
+    left: 50%;
+}
+
+#message {
+	font-family: 'Exo', sans-serif;
+	font-size: 18px;
+	text-align: center;
+	margin-bottom: 5%
+}
+
+.game-container {
+	position: relative;
+}
+
+.gameboard-container {
+	width: 430px;
+	display: inline-block;
+}
+.gameboard-container h2 {
+	width: 430px;
+	display: inline-block;
+	text-align: center;
+}
+
+.gameboard {
+	position: relative;
+	vertical-align: top;
+	padding: 5px;
+	height: 420px;
+	width: 420px;
+	background-color: #0F1C1D;
+	border-radius: 2px;
+}
+	.gameboard-container:last-child {
+		margin-left: 10px;
+	}
+
+	.gameboard-cell {
+		vertical-align: top; /*/ * Borra el espacio vertical entre filas * */
+		height: 40px;
+		width: 40px;
+		display: inline-block;
+		background-color: #409798;
+		margin: 1px;
+		border-radius: 1px;
+	}
+
+	.gameboard-cell:hover {
+		background-image: url("img/target.png");
+	}
+
+	.grid-miss, .grid-miss:hover {
+		background-image: url("img/loss.png");
+	}
+
+	.grid-hit, .grid-hit:hover {
+		background-image: url("img/hit.png");
+	}
+
+	.grid-sunk, .grid-sunk:hover {
+		background-color: #FF851B;
+	}
+
+	.grid-ship, .grid-ship:hover {
+		background-color: #404040;
+	}
+
+#roster-sidebar, #stats-sidebar, #restart-sidebar {
+		width: 150px;
+		padding: 20px;
+		margin: 0;
+		background-color: #EEEEEE;
+		position: absolute;
+		top: 4.5em;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+	}
+	#roster-sidebar, #restart-sidebar {
+		left: -200px;
+	}
+	#stats-sidebar {
+		right: -200px;
+	}
+		#roster-sidebar h2, #stats-sidebar h2, #restart-sidebar h2 {
+			margin: 0 0 1em 0;
+			text-align: center;
+		}
+

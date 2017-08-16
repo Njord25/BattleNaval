@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="battleship.css" type="text/css">
+    <link rel="icon" type="text/css" href="img/shipt.ico">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Orbitron|Exo" rel="stylesheet">
+    <title>Battleship</title>
+</head>
+
+<body>
+<h1>Battleship</h1>
+	<br>
+	<div id= "message">Presione "Start" para iniciar el juego! Buena Suerte!</div>
+	<button id="start-game">Start</button>
+	<div class = "gameContainer">
+		<div class="gameboard-container">
+			<h2>Tú Flota</h2>
+			<div class="gameboard friendly"></div>
+		</div>
+		<div class="gameboard-container">
+			<h2>Flota enemiga</h2>
+			<div class="gameboard enemy"></div>
+		</div>
+		<div id="stats-sidebar">
+			<h2>Stats</h2>
+			<p><strong>Games Won</strong></p>
+			<p id="stats-wins">0 of 0</p>
+			<p><strong>Accuracy</strong></p>
+			<p id="stats-accuracy">0%</p>
+			<button id="reset-stats">Reset Stats</button>
+			<button id="prob-heatmap" class="hidden">Show Probability Heatmap</button>
+		</div>
+
+	</div>
+	<script type="text/javascript" src="js/battleship.js"></script>
+	<script type="text/javascript" src="js/view.js"></script>
+	<script type="text/javascript" src="js/model.js"></script> 
+	<script type="text/javascript" src="js/controller.js"></script>
+</body>
+</html>
+
